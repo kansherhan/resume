@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Mixins imports */
+@import "./mixins/scrollbar";
+
+@import "variables";
+@import "root";
+@import "header";
+
+@import "block";
+
+@import "./blocks/contact-info";
+@import "./blocks/education";
+@import "./blocks/language";
+@import "./blocks/interest";
+
+@import "./blocks/about";
+@import "./blocks/experiance";
+@import "./blocks/skill";

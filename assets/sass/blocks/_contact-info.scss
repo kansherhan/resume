@@ -1,0 +1,23 @@
+.contact-info {
+    &-items {
+        & > li {
+            display: flex;
+
+            & > a {
+                text-decoration: none;
+
+                &:hover > .text {
+                    text-decoration: underline;
+                }
+            }
+
+            & ion-icon {
+                color: $light-blue-color;
+            }
+
+            & .text {
+                margin-left: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.experiance {
+    &-items {
+        & > li {
+            display: flex;
+            justify-content: space-between;
+
+            & > .company-info {
+                & > .name {
+                    color: #000;
+
+                    margin-top: 10px;
+                }
+
+                & > p {
+                    font-size: 14px;
+                    font-weight: 500;
+
+                    color: $light-blue-color;
+                }
+            }
+
+            & > .description {
+                width: 400px;
+
+                & > .profession {
+                    font-weight: 500;
+
+                    margin-bottom: 10px;
+                }
+
+                & > .text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-items {
+            & > li {
+                flex-direction: column;
+                justify-content: normal;
+
+                & > .description {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

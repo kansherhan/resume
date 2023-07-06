@@ -1,0 +1,27 @@
+.education {
+    &-items {
+        & > li {
+            & > {
+                .year {
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    color: $light-blue-color;
+                }
+
+                .profession {
+                    font-weight: 700;
+
+                    color: #333;
+                }
+
+                .university {
+                    font-weight: 300;
+                    font-size: 14px;
+
+                    color: #666;
+                }
+            }
+        }
+    }
+}

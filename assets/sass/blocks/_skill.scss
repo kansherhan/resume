@@ -1,0 +1,37 @@
+.skill {
+    &-items {
+        & > li {
+            display: flex;
+
+            & > {
+                .name {
+                    width: 25%;
+                }
+
+                .percent {
+                    display: inline-block;
+
+                    width: 75%;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-items {
+            & > li {
+                display: block;
+
+                & > .percent {
+                    display: block;
+
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
