@@ -1,84 +1,84 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 
-    &-avatar > img {
-        width: 200px;
-        height: 200px;
+  &-avatar > img {
+    width: 200px;
+    height: 200px;
 
-        border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  &-username {
+    & > {
+      .name {
+        font-size: 56px;
+        font-weight: 700;
+      }
+
+      .profession {
+        font-size: 21px;
+      }
     }
+
+    margin-right: 50px;
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
 
     &-username {
-        & > {
-            .name {
-                font-size: 56px;
-                font-weight: 700;
-            }
+      margin-right: 0;
 
-            .profession {
-                font-size: 21px;
-            }
+      & > .profession {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &-username {
+      & > {
+        .name {
+          font-size: 42px;
+          text-align: center;
         }
 
-        margin-right: 50px;
-    }
-
-    @media (max-width: 992px) {
-        flex-direction: column;
-
-        &-username {
-            margin-right: 0;
-
-            & > .profession {
-                text-align: center;
-            }
+        .profession {
+          font-size: 18px;
         }
+      }
     }
+  }
 
-    @media (max-width: 768px) {
-        &-username {
-            & > {
-                .name {
-                    font-size: 42px;
-                    text-align: center;
-                }
-
-                .profession {
-                    font-size: 18px;
-                }
-            }
+  @media (max-width: 576px) {
+    &-username {
+      & > {
+        .name {
+          font-size: 36px;
         }
-    }
 
-    @media (max-width: 576px) {
-        &-username {
-            & > {
-                .name {
-                    font-size: 36px;
-                }
-
-                .profession {
-                    font-size: 16px;
-                }
-            }
+        .profession {
+          font-size: 16px;
         }
+      }
     }
+  }
 
-    @media (max-width: 480px) {
-        &-username {
-            & > {
-                .name {
-                    font-size: 27px;
-                }
-
-                .profession {
-                    font-size: 14px;
-                }
-            }
+  @media (max-width: 480px) {
+    &-username {
+      & > {
+        .name {
+          font-size: 27px;
         }
+
+        .profession {
+          font-size: 14px;
+        }
+      }
     }
+  }
 }
