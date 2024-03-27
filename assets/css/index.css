@@ -96,9 +96,13 @@ ul {
   margin-bottom: 50px;
 }
 .header-avatar > img {
-  width: 200px;
-  height: 200px;
+  width: 225px;
+  height: 225px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 23%;
+     object-position: center 23%;
 }
 .header-username {
   margin-right: 50px;
@@ -246,6 +250,9 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+.experiance-items > li > .company-info {
+  width: 140px;
+}
 .experiance-items > li > .company-info > .name {
   color: #000;
   margin-top: 10px;
@@ -296,4 +303,4 @@ ul {
     display: block;
     width: 100%;
   }
-} /*# sourceMappingURL=index.css.map */
+}
